@@ -1,10 +1,10 @@
 require 'twitter'
 
 @client =Twitter::REST::Client.new do |config|
-  config.consumer_key = "hoge"
-  config.consumer_secret = "hoge"
-  config.access_token = "hoge"
-  config.access_token_secret = "hoge"
+  puts ENV["config.consumer_key"]
+  puts ENV["config.consumer_secret"]
+  puts ENV["config.access_token"]
+  puts ENV["config.access_token_secret"]
 end
 
 def tutorial
@@ -57,4 +57,3 @@ else
   tweet
   homeTimeline
 end
-
